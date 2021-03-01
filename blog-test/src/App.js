@@ -1,11 +1,11 @@
 import './App.css';
+import PostsList from './components/PostsList';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Blog App</h1>
-      </header>
+      <h1>Blog App</h1>
+      <PostsList />
     </div>
   );
 }
