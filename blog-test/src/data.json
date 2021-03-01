@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "title": "First post title",
+      "content": "Cat ipsum dolor sit amet, licks your face for hack up furballs open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!. Demand to be let outside at once, and expect owner to wait for me as i think about it crusty butthole or eat the fat cats food or bleghbleghvomit my furball really tie the room together tweeting a baseball or lick human with sandpaper tongue.",
+      "author": "John Doe",
+      "authorID": 1
+    },
+    {
+      "title": "Second post title",
+      "content": "Cat ipsum dolor sit amet, licks your face for hack up furballs open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!. Demand to be let outside at once, and expect owner to wait for me as i think about it crusty butthole or eat the fat cats food or bleghbleghvomit my furball really tie the room together tweeting a baseball or lick human with sandpaper tongue.",
+      "author": "Marie Curie",
+      "authorID": 2
+    },
+    {
+      "title": "Thrid post title",
+      "content": "Cat ipsum dolor sit amet, licks your face for hack up furballs open the door, let me out, let me out, let me-out, let me-aow, let meaow, meaow!. Demand to be let outside at once, and expect owner to wait for me as i think about it crusty butthole or eat the fat cats food or bleghbleghvomit my furball really tie the room together tweeting a baseball or lick human with sandpaper tongue.",
+      "author": "Rosalind Franklin",
+      "authorID": 3
+    }
+  ]
+}
