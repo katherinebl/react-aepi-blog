@@ -1,3 +1,25 @@
 .App {
   text-align: center;
+  background-color: #f6f6f6;
+  height: 100vh;
+}
+
+.App h1 {
+  margin-top: 0;
+  padding-top: 2em;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.post-card {
+  background-color: white;
+  border: none;
+  -webkit-box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.50);
+  box-shadow: 0px 1px 10px 1px rgba(0,0,0,0.50);
+  border-radius: 8px;
+  width: 25%;
+  padding: 10px 20px;
 }

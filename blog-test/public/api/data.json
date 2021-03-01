@@ -1,0 +1,22 @@
+{
+  "posts": [
+    {
+      "title": "First post title",
+      "content": "Cat ipsum dolor sit amet...",
+      "author": "John Doe",
+      "authorID": 1
+    },
+    {
+      "title": "Second post title",
+      "content": "Cat ipsum dolor sit amet...",
+      "author": "Marie Curie",
+      "authorID": 2
+    },
+    {
+      "title": "Thrid post title",
+      "content": "Cat ipsum dolor sit amet...",
+      "author": "Rosalind Franklin",
+      "authorID": 3
+    }
+  ]
+}
