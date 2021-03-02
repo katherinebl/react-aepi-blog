@@ -21,7 +21,7 @@ function PostsList () {
           <div className="post-card" key={post.authorID}>
             <h3>{post.title}</h3>
             <p>{post.content}</p>
-            <small>{post.author}</small>
+            <samp>{post.author}</samp>
           </div>
       )
     })
