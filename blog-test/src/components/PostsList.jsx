@@ -13,19 +13,19 @@ function PostsList () {
   }, [])
 
 
-  let postsList = []
+  let postsList = <h3>No posts...</h3>
 
-  postsList = posts.map(post => {
-    return (
-        <div className="post-card">
-          <h3>{post.title}</h3>
-          <p>{post.content}</p>
-          <small>{post.author}</small>
-        </div>
-    )
-  })
-
-
+  if(posts && posts.length > 0) {
+    postsList = posts.map(post => {
+      return (
+          <div className="post-card" key={post.authorID}>
+            <h3>{post.title}</h3>
+            <p>{post.content}</p>
+            <small>{post.author}</small>
+          </div>
+      )
+    })
+  }
 
   return (
     <div className="container">{postsList}</div>
