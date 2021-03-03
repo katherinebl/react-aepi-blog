@@ -3,25 +3,21 @@ import axios from 'axios';
 
 function PostDetail({url}) {
 
-  console.log('lo que llega: ', url)
+  // console.log('lo que llega: ', url)
 
   const [post, setPost] = useState(null);
 
   useEffect(() => {
-    fetch(url)
-    .then(response => {
-      console.log('pasa por aqui? :', response.url);
-      setPost(response);
-    });
-
-  }, [url]);
+    setPost(url)
+  }, [url])
 
   return (
     <>
-      <h6>POST DETAIL</h6>
       {post &&
         <div className="post-detail">
-          <h6>{post.url}</h6>
+          <h3>{post.title}</h3>
+          <p>{post.content}</p>
+          <samp>{post.author}</samp>
         </div>
       }
     </>

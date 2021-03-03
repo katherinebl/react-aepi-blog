@@ -23,10 +23,9 @@ function PostsList () {
           <div
             className="post-card"
             key={post.authorID}
-            onClick={() => setSelected(post.authorID)}
+            onClick={() => setSelected(post)}
           >
             <h3>{post.title}</h3>
-            <p>{post.content}</p>
             <samp>{post.author}</samp>
           </div>
       )
