@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom'
 import axios from 'axios';
 import PostDetail from './PostDetail';
+import Form from './Form';
 
 function PostsList () {
 
@@ -34,7 +35,12 @@ function PostsList () {
 
   return (
     <>
-      <div className="container">{postsList}</div>
+      <div className="container">
+        {postsList}
+      </div>
+      {/* <div className="container">
+        <Form />
+      </div> */}
     </>
   )
 }

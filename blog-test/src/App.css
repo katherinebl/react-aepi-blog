@@ -11,6 +11,21 @@
   text-align: center;
 }
 
+.App form {
+  margin: 2em auto;
+  padding: 40px;
+  height: 100%;
+}
+
+.App form .form-control{
+  margin: 20px auto;
+}
+
+.App form input{
+  padding: 5px;
+  margin: 0 10px;
+}
+
 .nav {
   display: flex;
   justify-content: space-around;
