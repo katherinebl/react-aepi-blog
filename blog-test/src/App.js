@@ -13,9 +13,9 @@ function App() {
         <Nav />
         <Switch>
           <Route exact path="/" component={Home}/>
-          <Route path="/new" component={Form}/>
           <Route exact path="/posts" component={PostsList}/>
           <Route path="/posts/:id" component={PostDetail}/>
+          <Route path="/new" component={Form}/>
         </Switch>
       </div>
     </Router>
