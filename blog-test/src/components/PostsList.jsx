@@ -14,7 +14,6 @@ function PostsList () {
       })
   }, [])
 
-
   let postsList = <h3>No posts...</h3>
 
   if(posts && posts.length > 0) {
@@ -22,11 +21,12 @@ function PostsList () {
       return (
           <div
             className="post-card"
-            key={post.authorID}
+            key={post.id}
             onClick={() => setSelected(post)}
           >
             <h3>{post.title}</h3>
             <samp>{post.author}</samp>
+            <p>{post.id}</p>
           </div>
       )
     })
