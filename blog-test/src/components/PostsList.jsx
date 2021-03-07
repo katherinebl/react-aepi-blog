@@ -6,7 +6,6 @@ import PostDetail from './PostDetail';
 function PostsList () {
 
   const [posts, setPosts] = useState([]);
-  const [selected, setSelected] = useState(null)
 
   useEffect(() => {
     axios.get('../../api/data.json')
@@ -23,7 +22,6 @@ function PostsList () {
           <div
             className="post-card"
             key={post.id}
-            onClick={() => setSelected(post)}
           >
             <Link to={`posts/${post.id}`}>
               <h3>{post.title}</h3>
@@ -37,9 +35,7 @@ function PostsList () {
   return (
     <>
       <div className="container">{postsList}</div>
-      {/* {selected &&
-        <PostDetail url={selected}/>} */}
-     </>
+    </>
   )
 }
 
