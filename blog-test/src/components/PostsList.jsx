@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom'
 import axios from 'axios';
 import PostDetail from './PostDetail';
 
@@ -24,9 +25,10 @@ function PostsList () {
             key={post.id}
             onClick={() => setSelected(post)}
           >
-            <h3>{post.title}</h3>
-            <samp>{post.author}</samp>
-            <p>{post.id}</p>
+            <Link to={`posts/${post.id}`}>
+              <h3>{post.title}</h3>
+            </Link>
+
           </div>
       )
     })
@@ -34,10 +36,9 @@ function PostsList () {
 
   return (
     <>
-      <h1>Blog App</h1>
       <div className="container">{postsList}</div>
-      {selected &&
-        <PostDetail url={selected}/>}
+      {/* {selected &&
+        <PostDetail url={selected}/>} */}
      </>
   )
 }
